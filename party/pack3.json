@@ -1,0 +1,608 @@
+[
+  {
+    "id": "chidiya_udd",
+    "english": "Sparrow",
+    "hindi": "चिड़िया",
+    "flies": true
+  },
+  {
+    "id": "tape_udd",
+    "english": "Tape",
+    "hindi": "टेप",
+    "flies": false
+  },
+  {
+    "id": "toy_car_udd",
+    "english": "Toy car",
+    "hindi": "खिलौना गाड़ी",
+    "flies": false
+  },
+  {
+    "id": "aam_udd",
+    "english": "Aam",
+    "hindi": "आम",
+    "flies": false
+  },
+  {
+    "id": "chalk_udd",
+    "english": "Chalk",
+    "hindi": "चॉक",
+    "flies": false
+  },
+  {
+    "id": "chinti_udd",
+    "english": "Chinti",
+    "hindi": "चींटी",
+    "flies": false
+  },
+  {
+    "id": "kauwa_udd",
+    "english": "Kauwa",
+    "hindi": "कौआ",
+    "flies": true
+  },
+  {
+    "id": "sunflower_udd",
+    "english": "Sunflower",
+    "hindi": "सूरजमुखी",
+    "flies": false
+  },
+  {
+    "id": "wallet_udd",
+    "english": "Wallet",
+    "hindi": "वॉलेट",
+    "flies": false
+  },
+  {
+    "id": "gilaas_udd",
+    "english": "Gilaas",
+    "hindi": "गिलास",
+    "flies": false
+  },
+  {
+    "id": "photo_frame_udd",
+    "english": "Photo frame",
+    "hindi": "फोटो फ्रेम",
+    "flies": false
+  },
+  {
+    "id": "jhaadu_udd",
+    "english": "Jhaadu",
+    "hindi": "झाड़ू",
+    "flies": false
+  },
+  {
+    "id": "steamroller_udd",
+    "english": "Steamroller",
+    "hindi": "रोड रोलर",
+    "flies": false
+  },
+  {
+    "id": "mobile_udd",
+    "english": "Mobile",
+    "hindi": "मोबाइल",
+    "flies": false
+  },
+  {
+    "id": "lomdi_udd",
+    "english": "Lomdi",
+    "hindi": "लोमड़ी",
+    "flies": false
+  },
+  {
+    "id": "maggi_udd",
+    "english": "Maggi",
+    "hindi": "मैगी",
+    "flies": false
+  },
+  {
+    "id": "naav_udd",
+    "english": "Naav",
+    "hindi": "नाव",
+    "flies": false
+  },
+  {
+    "id": "siyaar_udd",
+    "english": "Siyaar",
+    "hindi": "सियार",
+    "flies": false
+  },
+  {
+    "id": "teetar_udd",
+    "english": "Teetar",
+    "hindi": "तीतर",
+    "flies": true
+  },
+  {
+    "id": "phoenix_udd",
+    "english": "Phoenix",
+    "hindi": "फ़ीनिक्स",
+    "flies": true
+  },
+  {
+    "id": "blackboard_udd",
+    "english": "Blackboard",
+    "hindi": "ब्लैकबोर्ड",
+    "flies": false
+  },
+  {
+    "id": "duster_udd",
+    "english": "Duster",
+    "hindi": "डस्टर",
+    "flies": false
+  },
+  {
+    "id": "samosa_udd",
+    "english": "Samosa",
+    "hindi": "समोसा",
+    "flies": false
+  },
+  {
+    "id": "chudi_udd",
+    "english": "Chudi",
+    "hindi": "चूड़ी",
+    "flies": false
+  },
+  {
+    "id": "kingfisher_udd",
+    "english": "Kingfisher",
+    "hindi": "किलकिला",
+    "flies": true
+  },
+  {
+    "id": "llama_udd",
+    "english": "Llama",
+    "hindi": "लामा",
+    "flies": false
+  },
+  {
+    "id": "table_udd",
+    "english": "Table",
+    "hindi": "टेबल",
+    "flies": false
+  },
+  {
+    "id": "billi_udd",
+    "english": "Billi",
+    "hindi": "बिल्ली",
+    "flies": false
+  },
+  {
+    "id": "bomb_udd",
+    "english": "Bomb",
+    "hindi": "बम",
+    "flies": true
+  },
+  {
+    "id": "whiteboard_udd",
+    "english": "Whiteboard",
+    "hindi": "व्हाइटबोर्ड",
+    "flies": false
+  },
+  {
+    "id": "drone_udd",
+    "english": "Drone",
+    "hindi": "ड्रोन",
+    "flies": true
+  },
+  {
+    "id": "microwave_udd",
+    "english": "Microwave",
+    "hindi": "माइक्रोवेव",
+    "flies": false
+  },
+  {
+    "id": "aadhar_udd",
+    "english": "Aadhar card",
+    "hindi": "आधार कार्ड",
+    "flies": false
+  },
+  {
+    "id": "football_udd",
+    "english": "Football",
+    "hindi": "फुटबॉल",
+    "flies": false
+  },
+  {
+    "id": "fighter_jet_udd",
+    "english": "Fighter jet",
+    "hindi": "फाइटर जेट",
+    "flies": true
+  },
+  {
+    "id": "salwar_udd",
+    "english": "Salwar",
+    "hindi": "सलवार",
+    "flies": false
+  },
+  {
+    "id": "dabba_udd",
+    "english": "Dabba",
+    "hindi": "डब्बा",
+    "flies": false
+  },
+  {
+    "id": "otter_udd",
+    "english": "Otter",
+    "hindi": "ऊदबिलाव",
+    "flies": false
+  },
+  {
+    "id": "ra_one_udd",
+    "english": "Ra.One",
+    "hindi": "रा.वन",
+    "flies": true
+  },
+  {
+    "id": "achar_udd",
+    "english": "Achar",
+    "hindi": "अचार",
+    "flies": false
+  },
+  {
+    "id": "zanjeer_udd",
+    "english": "Zanjeer",
+    "hindi": "ज़ंजीर",
+    "flies": false
+  },
+  {
+    "id": "emu_udd",
+    "english": "Emu",
+    "hindi": "एमू",
+    "flies": false
+  },
+  {
+    "id": "skunk_udd",
+    "english": "Skunk",
+    "hindi": "स्कंक",
+    "flies": false
+  },
+  {
+    "id": "nail_cutter_udd",
+    "english": "Nail cutter",
+    "hindi": "नेल कटर",
+    "flies": false
+  },
+  {
+    "id": "ghoda_udd",
+    "english": "Ghoda",
+    "hindi": "घोड़ा",
+    "flies": false
+  },
+  {
+    "id": "almirah_udd",
+    "english": "Almirah",
+    "hindi": "अलमारी",
+    "flies": false
+  },
+  {
+    "id": "suit_udd",
+    "english": "Suit",
+    "hindi": "सूट",
+    "flies": false
+  },
+  {
+    "id": "ghutna_udd",
+    "english": "Ghutna",
+    "hindi": "घुटना",
+    "flies": false
+  },
+  {
+    "id": "hamster_udd",
+    "english": "Hamster",
+    "hindi": "हैम्स्टर",
+    "flies": false
+  },
+  {
+    "id": "pochha_udd",
+    "english": "Pochha",
+    "hindi": "पोंछा",
+    "flies": false
+  },
+  {
+    "id": "chess_udd",
+    "english": "Chess",
+    "hindi": "शतरंज",
+    "flies": false
+  },
+  {
+    "id": "panther_udd",
+    "english": "Panther",
+    "hindi": "तेंदुआ",
+    "flies": false
+  },
+  {
+    "id": "tiddi_udd",
+    "english": "Tiddi",
+    "hindi": "टिड्डी",
+    "flies": true
+  },
+  {
+    "id": "termite_udd",
+    "english": "Termite",
+    "hindi": "दीमक",
+    "flies": true
+  },
+  {
+    "id": "hedgehog_udd",
+    "english": "Hedgehog",
+    "hindi": "हेजहोग",
+    "flies": false
+  },
+  {
+    "id": "satellite_udd",
+    "english": "Satellite",
+    "hindi": "सेटेलाइट",
+    "flies": true
+  },
+  {
+    "id": "ice_cream_udd",
+    "english": "Ice cream",
+    "hindi": "आइस क्रीम",
+    "flies": false
+  },
+  {
+    "id": "mattress_udd",
+    "english": "Mattress",
+    "hindi": "गद्दा",
+    "flies": false
+  },
+  {
+    "id": "jiraaf_udd",
+    "english": "Jiraaf",
+    "hindi": "जिराफ़",
+    "flies": false
+  },
+  {
+    "id": "chamgadar_udd",
+    "english": "Chamgadar",
+    "hindi": "चमगादड़",
+    "flies": true
+  },
+  {
+    "id": "takiya_udd",
+    "english": "Takiya",
+    "hindi": "तकिया",
+    "flies": false
+  },
+  {
+    "id": "pani_puri_udd",
+    "english": "Pani puri",
+    "hindi": "पानी पूरी",
+    "flies": false
+  },
+  {
+    "id": "garuda_udd",
+    "english": "Garuda",
+    "hindi": "गरुड़",
+    "flies": true
+  },
+  {
+    "id": "bulldozer_udd",
+    "english": "Bulldozer",
+    "hindi": "बुलडोज़र",
+    "flies": false
+  },
+  {
+    "id": "shark_udd",
+    "english": "Shark",
+    "hindi": "शार्क",
+    "flies": false
+  },
+  {
+    "id": "patta_udd",
+    "english": "Patta",
+    "hindi": "पत्ता",
+    "flies": false
+  },
+  {
+    "id": "sikka_udd",
+    "english": "Sikka",
+    "hindi": "सिक्का",
+    "flies": false
+  },
+  {
+    "id": "hot_air_balloon_udd",
+    "english": "Hot air balloon",
+    "hindi": "हॉट एयर बैलून",
+    "flies": true
+  },
+  {
+    "id": "speaker_udd",
+    "english": "Speaker",
+    "hindi": "स्पीकर",
+    "flies": false
+  },
+  {
+    "id": "indradhanush_udd",
+    "english": "Rainbow",
+    "hindi": "इंद्रधनुष",
+    "flies": false
+  },
+  {
+    "id": "toothbrush_udd",
+    "english": "Toothbrush",
+    "hindi": "टूथब्रश",
+    "flies": false
+  },
+  {
+    "id": "kulfi_udd",
+    "english": "Kulfi",
+    "hindi": "कुल्फी",
+    "flies": false
+  },
+  {
+    "id": "paratha_udd",
+    "english": "Paratha",
+    "hindi": "पराठा",
+    "flies": false
+  },
+  {
+    "id": "paneer_udd",
+    "english": "Paneer",
+    "hindi": "पनीर",
+    "flies": false
+  },
+  {
+    "id": "chawal_udd",
+    "english": "Chawal",
+    "hindi": "चावल",
+    "flies": false
+  },
+  {
+    "id": "printer_udd",
+    "english": "Printer",
+    "hindi": "प्रिंटर",
+    "flies": false
+  },
+  {
+    "id": "burger_udd",
+    "english": "Burger",
+    "hindi": "बर्गर",
+    "flies": false
+  },
+  {
+    "id": "hornbill_udd",
+    "english": "Hornbill",
+    "hindi": "हॉर्नबिल",
+    "flies": true
+  },
+  {
+    "id": "kharbuja_udd",
+    "english": "Kharbuja",
+    "hindi": "खरबूजा",
+    "flies": false
+  },
+  {
+    "id": "lock_udd",
+    "english": "Lock",
+    "hindi": "ताला",
+    "flies": false
+  },
+  {
+    "id": "strawberry_udd",
+    "english": "Strawberry",
+    "hindi": "स्ट्रॉबेरी",
+    "flies": false
+  },
+  {
+    "id": "dolphin_udd",
+    "english": "Dolphin",
+    "hindi": "डॉल्फिन",
+    "flies": false
+  },
+  {
+    "id": "naak_udd",
+    "english": "Naak",
+    "hindi": "नाक",
+    "flies": false
+  },
+  {
+    "id": "aloo_udd",
+    "english": "Aloo",
+    "hindi": "आलू",
+    "flies": false
+  },
+  {
+    "id": "tinkerbell_udd",
+    "english": "Tinker Bell",
+    "hindi": "टिंकर बेल",
+    "flies": true
+  },
+  {
+    "id": "magpie_udd",
+    "english": "Magpie",
+    "hindi": "मैगपाई",
+    "flies": true
+  },
+  {
+    "id": "kursi_udd",
+    "english": "Kursi",
+    "hindi": "कुर्सी",
+    "flies": false
+  },
+  {
+    "id": "flameback_udd",
+    "english": "Flameback",
+    "hindi": "फ्लेमबैक",
+    "flies": true
+  },
+  {
+    "id": "taxi_udd",
+    "english": "Taxi",
+    "hindi": "टैक्सी",
+    "flies": false
+  },
+  {
+    "id": "cactus_udd",
+    "english": "Cactus",
+    "hindi": "कैक्टस",
+    "flies": false
+  },
+  {
+    "id": "pet_udd",
+    "english": "Pet",
+    "hindi": "पेट",
+    "flies": false
+  },
+  {
+    "id": "papad_udd",
+    "english": "Papad",
+    "hindi": "पापड़",
+    "flies": false
+  },
+  {
+    "id": "ungali_udd",
+    "english": "Ungali",
+    "hindi": "उंगली",
+    "flies": false
+  },
+  {
+    "id": "flag_udd",
+    "english": "Jhanda",
+    "hindi": "झंडा",
+    "flies": false
+  },
+  {
+    "id": "jharna_udd",
+    "english": "Jharna",
+    "hindi": "झरना",
+    "flies": false
+  },
+  {
+    "id": "gaadi_udd",
+    "english": "Gaadi",
+    "hindi": "गाड़ी",
+    "flies": false
+  },
+  {
+    "id": "perfume_udd",
+    "english": "Perfume",
+    "hindi": "परफ्यूम",
+    "flies": false
+  },
+  {
+    "id": "weasel_udd",
+    "english": "Weasel",
+    "flies": false,
+    "hindi": "नेवला (भभकी)"
+  },
+  {
+    "id": "akhbaar_udd",
+    "english": "Akhbaar",
+    "hindi": "अखबार",
+    "flies": false
+  },
+  {
+    "id": "gas_stove_udd",
+    "english": "Gas stove",
+    "hindi": "गैस स्टोव",
+    "flies": false
+  },
+  {
+    "id": "idli_udd",
+    "english": "Idli",
+    "hindi": "इडली",
+    "flies": false
+  }
+]
