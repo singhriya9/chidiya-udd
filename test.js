@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-const apiKey = "";
+const apiKey = process.env.ELEVENLABS_API_KEY;
 // Use any these free & premade voice id in Jessica and Laura as these are only Indian typed Female voices available for free
 // Jessica (Playful, Bright, Warm): cgSgspJ2msm6clMCkdW9
 // Laura (Enthusiast, Quirky Attitude): FGY2WhTYpPnrIDTdsKH5

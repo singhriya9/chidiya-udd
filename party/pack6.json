@@ -12,18 +12,6 @@
     "flies": false
   },
   {
-    "id": "dant_udd",
-    "english": "Dant",
-    "hindi": "दाँत",
-    "flies": false
-  },
-  {
-    "id": "torch_udd",
-    "english": "Torch",
-    "hindi": "टॉर्च",
-    "flies": false
-  },
-  {
     "id": "kachhua_udd",
     "english": "Kachhua",
     "hindi": "कछुआ",
@@ -84,24 +72,6 @@
     "flies": false
   },
   {
-    "id": "bagh_udd",
-    "english": "Bagh",
-    "hindi": "बाघ",
-    "flies": false
-  },
-  {
-    "id": "dhokla_udd",
-    "english": "Dhokla",
-    "hindi": "ढोकला",
-    "flies": false
-  },
-  {
-    "id": "raita_udd",
-    "english": "Raita",
-    "hindi": "रायता",
-    "flies": false
-  },
-  {
     "id": "biryani_udd",
     "english": "Biryani",
     "hindi": "बिरयानी",
@@ -150,12 +120,6 @@
     "flies": false
   },
   {
-    "id": "puncher_udd",
-    "english": "Puncher",
-    "hindi": "पंचर",
-    "flies": false
-  },
-  {
     "id": "tarbooz_udd",
     "english": "Tarbooz",
     "hindi": "तरबूज़",
@@ -184,18 +148,6 @@
     "english": "Mor",
     "hindi": "मोर",
     "flies": true
-  },
-  {
-    "id": "shorts_udd",
-    "english": "Shorts",
-    "hindi": "शॉर्ट्स",
-    "flies": false
-  },
-  {
-    "id": "sundi_udd",
-    "english": "Sundi",
-    "hindi": "सुंडी",
-    "flies": false
   },
   {
     "id": "balti_udd",
@@ -240,12 +192,6 @@
     "flies": false
   },
   {
-    "id": "sir_udd",
-    "english": "Sir",
-    "hindi": "सिर",
-    "flies": false
-  },
-  {
     "id": "gaay_udd",
     "english": "Gaay",
     "hindi": "गाय",
@@ -273,12 +219,6 @@
     "id": "shirt_udd",
     "english": "Shirt",
     "hindi": "शर्ट",
-    "flies": false
-  },
-  {
-    "id": "walrus_udd",
-    "english": "Walrus",
-    "hindi": "वालरस",
     "flies": false
   },
   {
@@ -352,11 +292,5 @@
     "english": "Kabootar",
     "hindi": "कबूतर",
     "flies": true
-  },
-  {
-    "id": "fire_truck_udd",
-    "english": "Fire truck",
-    "hindi": "फायर ट्रक",
-    "flies": false
   }
 ]

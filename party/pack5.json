@@ -12,18 +12,6 @@
     "flies": true
   },
   {
-    "id": "pant_udd",
-    "english": "Pant",
-    "hindi": "पैंट",
-    "flies": false
-  },
-  {
-    "id": "halwa_udd",
-    "english": "Halwa",
-    "hindi": "हलवा",
-    "flies": false
-  },
-  {
     "id": "kachori_udd",
     "english": "Kachori",
     "hindi": "कचौरी",
@@ -60,12 +48,6 @@
     "flies": false
   },
   {
-    "id": "hoodie_udd",
-    "english": "Hoodie",
-    "hindi": "हूडी",
-    "flies": false
-  },
-  {
     "id": "ship_udd",
     "english": "Ship",
     "hindi": "जहाज़",
@@ -81,12 +63,6 @@
     "id": "tamatar_udd",
     "english": "Tamatar",
     "hindi": "टमाटर",
-    "flies": false
-  },
-  {
-    "id": "nimbu_paani_udd",
-    "english": "Nimbu paani",
-    "hindi": "नींबू पानी",
     "flies": false
   },
   {
@@ -114,18 +90,6 @@
     "flies": true
   },
   {
-    "id": "nevla_udd",
-    "english": "Nevla",
-    "hindi": "नेवला",
-    "flies": false
-  },
-  {
-    "id": "ghaas_udd",
-    "english": "Ghaas",
-    "hindi": "घास",
-    "flies": false
-  },
-  {
     "id": "pillar_udd",
     "english": "Pillar",
     "hindi": "खंभा",
@@ -144,12 +108,6 @@
     "flies": false
   },
   {
-    "id": "roti_udd",
-    "english": "Roti",
-    "hindi": "रोटी",
-    "flies": false
-  },
-  {
     "id": "chutney_udd",
     "english": "Chutney",
     "hindi": "चटनी",
@@ -159,12 +117,6 @@
     "id": "penguin_udd",
     "english": "Penguin",
     "hindi": "पेंगुइन",
-    "flies": false
-  },
-  {
-    "id": "capybara_udd",
-    "english": "Capybara",
-    "hindi": "कैपीबारा",
     "flies": false
   },
   {
@@ -183,18 +135,6 @@
     "id": "cable_car_udd",
     "english": "Cable car",
     "hindi": "केबल कार",
-    "flies": false
-  },
-  {
-    "id": "kheer_udd",
-    "english": "Kheer",
-    "hindi": "खीर",
-    "flies": false
-  },
-  {
-    "id": "bull_udd",
-    "english": "Saand",
-    "hindi": "साँड़",
     "flies": false
   },
   {
@@ -228,12 +168,6 @@
     "flies": true
   },
   {
-    "id": "rope_udd",
-    "english": "Rope",
-    "hindi": "रस्सी",
-    "flies": false
-  },
-  {
     "id": "dice_udd",
     "english": "Dice",
     "hindi": "पासा",
@@ -256,12 +190,6 @@
     "english": "Paraglider",
     "hindi": "पैराग्लाइडर",
     "flies": true
-  },
-  {
-    "id": "peda_udd",
-    "english": "Peda",
-    "hindi": "पेड़ा",
-    "flies": false
   },
   {
     "id": "angoothi_udd",
@@ -336,12 +264,6 @@
     "flies": true
   },
   {
-    "id": "scale_udd",
-    "english": "Scale",
-    "hindi": "स्केल",
-    "flies": false
-  },
-  {
     "id": "chameleon_udd",
     "english": "Chameleon",
     "hindi": "गिरगिट",
@@ -393,12 +315,6 @@
     "id": "carrom_udd",
     "english": "Carrom",
     "hindi": "कैरम",
-    "flies": false
-  },
-  {
-    "id": "poha_udd",
-    "english": "Poha",
-    "hindi": "पोहा",
     "flies": false
   },
   {
@@ -510,12 +426,6 @@
     "flies": false
   },
   {
-    "id": "ferret_udd",
-    "english": "Ferret",
-    "hindi": "फेरेट",
-    "flies": false
-  },
-  {
     "id": "ufo_udd",
     "english": "UFO",
     "hindi": "यूएफओ",
@@ -546,12 +456,6 @@
     "flies": false
   },
   {
-    "id": "pav_bhaji_udd",
-    "english": "Pav bhaji",
-    "hindi": "पाव भाजी",
-    "flies": false
-  },
-  {
     "id": "hippo_udd",
     "english": "Hippo",
     "hindi": "दरियाई घोड़ा",
@@ -564,18 +468,6 @@
     "flies": false
   },
   {
-    "id": "pasta_udd",
-    "english": "Pasta",
-    "hindi": "पास्ता",
-    "flies": false
-  },
-  {
-    "id": "dhaga_udd",
-    "english": "Dhaga",
-    "hindi": "धागा",
-    "flies": false
-  },
-  {
     "id": "gainda_udd",
     "english": "Gainda",
     "hindi": "गैंडा",
@@ -585,12 +477,6 @@
     "id": "mole_udd",
     "english": "Mole",
     "hindi": "छछूंदर",
-    "flies": false
-  },
-  {
-    "id": "gajak_udd",
-    "english": "Gajak",
-    "hindi": "गजक",
     "flies": false
   },
   {
