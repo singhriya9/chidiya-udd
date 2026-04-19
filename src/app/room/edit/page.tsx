@@ -16,7 +16,7 @@ export default function RoomEditPage() {
       roomPreviewStates.find((state) => state.id === activeStateId) ?? roomPreviewStates[0],
     [activeStateId],
   );
-  const myPreviewScore = useMemo(
+  const myPreviewCorrectGuesses = useMemo(
     () =>
       selectedState?.players.find((player) => player.id === selectedState.myId)?.score,
     [selectedState],
@@ -78,8 +78,8 @@ export default function RoomEditPage() {
         <WinnerScreen
           winnerName={selectedState.winner.name}
           winnerAvatar={selectedState.winner.avatar}
-          myScore={myPreviewScore}
-          totalUddItems={selectedState.round}
+          myCorrectGuesses={myPreviewCorrectGuesses}
+          totalRounds={selectedState.round}
           onPlayAgain={() => {}}
           onLeaderboard={() => {}}
         />

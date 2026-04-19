@@ -8,7 +8,7 @@
     "start": "next start",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "dev:all": "npx partykit dev & next dev",
+    "dev:all": "npx partykit dev && next dev",
     "generate:packs": "node scripts/create-packs.js",
     "generate:audio": "node scripts/generate-audio.js",
     "generate:sprite": "cd raw-sounds && audiosprite --format howler --export mp3 --output ../public/sounds/chidiya_sprite *.mp3"

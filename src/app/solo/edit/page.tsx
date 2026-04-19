@@ -170,7 +170,7 @@ export default function SoloEditPage() {
                         {selectedState.score}
                       </div>
                       <div className="text-slate-400 text-xs uppercase tracking-widest">
-                        Score
+                        Correct Guesses
                       </div>
                     </div>
                     <div className="mx-auto my-3 h-px w-full max-w-[180px] bg-white/10" />
@@ -179,7 +179,7 @@ export default function SoloEditPage() {
                         {selectedState.round}
                       </div>
                       <div className="text-slate-400 text-xs uppercase tracking-widest">
-                        Total UDD Items
+                        Rounds Played
                       </div>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function SoloEditPage() {
           ) : null}
           <div className="text-center">
             <div className="text-xs text-slate-500 uppercase tracking-widest">
-              Score
+              Correct Guesses
             </div>
             <div className="text-2xl font-black" style={{ color: '#f59e0b' }}>
               {selectedState.score}

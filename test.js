@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-const apiKey = "sk_df328c8f4bc06cbe1e8a93fc4de2b66f0fe1f1d30589da85";
+const apiKey = "";
 // Use any these free & premade voice id in Jessica and Laura as these are only Indian typed Female voices available for free
 // Jessica (Playful, Bright, Warm): cgSgspJ2msm6clMCkdW9
 // Laura (Enthusiast, Quirky Attitude): FGY2WhTYpPnrIDTdsKH5

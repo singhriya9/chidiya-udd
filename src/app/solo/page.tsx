@@ -114,6 +114,8 @@ export default function SoloPage() {
   const [startWithSound, setStartWithSound] = useState(true);
   const [showAudioGate, setShowAudioGate] = useState(true);
   const [audioGateError, setAudioGateError] = useState('');
+  const [isStarting, setIsStarting] = useState(false);
+  const [startStatus, setStartStatus] = useState('');
   const [isFingerUp, setIsFingerUp] = useState(false);
   const [round, setRound] = useState(0);
   const [roundActive, setRoundActive] = useState(false);
@@ -130,6 +132,8 @@ export default function SoloPage() {
   const roundRef = useRef(0);
   const activePackItemsRef = useRef<GameItem[]>([]);
   const isActiveRef = useRef(true);
+  const isStartingRef = useRef(false);
+  const startAttemptRef = useRef(0);
   const roundGapTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const fingerResetTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
     null,
@@ -218,7 +222,7 @@ export default function SoloPage() {
       const flies = item.flies;
 
       if (flies && clicked) {
-        // ✓ Correct
+        // ✓ Correct guess: clicked on a flying item
         addScore();
         playSound('correct');
         correctCountRef.current += 1;
@@ -226,8 +230,13 @@ export default function SoloPage() {
           nextLevel();
         }
       } else if (!flies && !clicked) {
-        // ✓ Correct (didn't click non-flying thing)
-        // no action needed
+        // ✓ Correct guess: did not click on a non-flying item
+        addScore();
+        playSound('correct');
+        correctCountRef.current += 1;
+        if (correctCountRef.current % 5 === 0) {
+          nextLevel();
+        }
       } else {
         // ✗ Wrong
         loseLife();
@@ -270,25 +279,37 @@ export default function SoloPage() {
 
   const startSolo = useCallback(
     async (withSound: boolean) => {
+      if (isStartingRef.current) return;
+
+      isStartingRef.current = true;
+      const attemptId = startAttemptRef.current + 1;
+      startAttemptRef.current = attemptId;
+      setIsStarting(true);
+
       try {
         setAudioGateError('');
+        setStartStatus('Getting your pack...');
         clearAudioPack();
 
         const { packId, items: packItems } = await requestSoloPack();
-        if (!isActiveRef.current) return;
+        if (!isActiveRef.current || startAttemptRef.current !== attemptId) return;
         if (!packItems.length) {
           throw new Error('Selected pack has no items.');
         }
 
         if (withSound) {
+          setStartStatus('Loading sounds...');
           await initAudio();
+          if (!isActiveRef.current || startAttemptRef.current !== attemptId) return;
           await loadAudioPack(packId);
+          if (!isActiveRef.current || startAttemptRef.current !== attemptId) return;
           setMuted(false);
           setMutedState(false);
         } else {
           setMuted(true);
           setMutedState(true);
         }
+        setStartStatus('Starting game...');
         setActivePackId(packId);
         setActivePackItems(packItems);
         setAudioEnabled(withSound);
@@ -305,6 +326,14 @@ export default function SoloPage() {
         setAudioGateError(
           'Could not start solo pack from PartyKit. Please try again.',
         );
+      } finally {
+        if (startAttemptRef.current === attemptId) {
+          isStartingRef.current = false;
+          if (isActiveRef.current) {
+            setIsStarting(false);
+            setStartStatus('');
+          }
+        }
       }
     },
     [startGame, startNextRound],
@@ -383,6 +412,7 @@ export default function SoloPage() {
                     variant="ghost"
                     size="icon"
                     onClick={() => setStartWithSound((v) => !v)}
+                    disabled={isStarting}
                     className="mx-auto mb-4 h-20! w-20! rounded-full border border-white/15 hover:bg-white/10 [&_svg]:size-12!"
                     title={startWithSound ? 'Start with sound' : 'Start muted'}
                   >
@@ -409,13 +439,20 @@ export default function SoloPage() {
                       {audioGateError}
                     </p>
                   ) : null}
+                  {isStarting && startStatus ? (
+                    <p className="text-amber-300 text-xs mb-4 uppercase tracking-widest">
+                      {startStatus}
+                    </p>
+                  ) : null}
                   <motion.div
-                    whileTap={{ scale: 0.95 }}
-                    whileHover={{ scale: 1.02 }}
+                    whileTap={isStarting ? undefined : { scale: 0.95 }}
+                    whileHover={isStarting ? undefined : { scale: 1.02 }}
                   >
                     <Button
                       id="enable-audio-btn"
                       size="lg"
+                      disabled={isStarting}
+                      aria-busy={isStarting}
                       className="w-full h-16 bg-amber-500 hover:bg-amber-400 text-black font-black rounded-xl text-xl transition-all shadow-lg shadow-amber-500/20"
                       onClick={enableAudioAndStart}
                     >
@@ -426,7 +463,7 @@ export default function SoloPage() {
                           width={30}
                           height={30}
                         />
-                        Tap to Play!
+                        {isStarting ? 'Getting Ready...' : 'Tap to Play!'}
                       </span>
                     </Button>
                   </motion.div>
@@ -476,7 +513,7 @@ export default function SoloPage() {
                         {score}
                       </div>
                       <div className="text-slate-400 text-xs uppercase tracking-widest">
-                        Score
+                        Correct Guesses
                       </div>
                     </div>
                     <div className="mx-auto my-3 h-px w-full max-w-[180px] bg-white/10" />
@@ -485,7 +522,7 @@ export default function SoloPage() {
                         {round}
                       </div>
                       <div className="text-slate-400 text-xs uppercase tracking-widest">
-                        Total UDD Items
+                        Rounds Played
                       </div>
                     </div>
                   </div>
@@ -564,7 +601,7 @@ export default function SoloPage() {
           ) : null}
           <div className="text-center">
             <div className="text-xs text-slate-500 uppercase tracking-widest">
-              Score
+              Correct Guesses
             </div>
             <div className="text-2xl font-black" style={{ color: '#f59e0b' }}>
               {score}

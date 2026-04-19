@@ -4,12 +4,15 @@ import { db } from '@/db';
 import { users } from '@/db/schema';
 import { eq, sql } from 'drizzle-orm';
 
-export async function saveScore(email: string, itemsCorrect: number): Promise<void> {
+export async function saveScore(
+  email: string,
+  correctGuesses: number,
+): Promise<void> {
   try {
     await db
       .update(users)
       .set({
-        totalCorrect: sql`${users.totalCorrect} + ${itemsCorrect}`,
+        totalCorrect: sql`${users.totalCorrect} + ${correctGuesses}`,
         gamesPlayed: sql`${users.gamesPlayed} + 1`,
       })
       .where(eq(users.email, email));

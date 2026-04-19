@@ -81,8 +81,10 @@ export default function RoomPage({ params }: PageProps) {
     name: string;
     avatar: string | null;
   } | null>(null);
-  const [myFinalScore, setMyFinalScore] = useState<number | null>(null);
-  const [totalUddItems, setTotalUddItems] = useState<number | null>(null);
+  const [myFinalCorrectGuesses, setMyFinalCorrectGuesses] = useState<
+    number | null
+  >(null);
+  const [totalRounds, setTotalRounds] = useState<number | null>(null);
   const [connectionStatus, setConnectionStatus] = useState<
     'connecting' | 'open' | 'reconnecting' | 'closed'
   >('connecting');
@@ -293,8 +295,8 @@ export default function RoomPage({ params }: PageProps) {
             (s: any) => s.id === myIdRef.current,
           );
           const myScore = myScoreRecord ? myScoreRecord.score : 0;
-          setMyFinalScore(myScore);
-          setTotalUddItems(typeof msg.round === 'number' ? msg.round : round);
+          setMyFinalCorrectGuesses(myScore);
+          setTotalRounds(typeof msg.round === 'number' ? msg.round : round);
           if (emailRef.current) {
             saveScore(emailRef.current, myScore).catch(console.error);
           }
@@ -314,8 +316,8 @@ export default function RoomPage({ params }: PageProps) {
           setRound(0);
           setRoundActive(false);
           setWinner(null);
-          setMyFinalScore(null);
-          setTotalUddItems(null);
+          setMyFinalCorrectGuesses(null);
+          setTotalRounds(null);
           break;
 
         case 'SPECTATOR_REACTION': {
@@ -452,8 +454,8 @@ export default function RoomPage({ params }: PageProps) {
         <WinnerScreen
           winnerName={winner.name}
           winnerAvatar={winner.avatar}
-          myScore={myFinalScore ?? undefined}
-          totalUddItems={totalUddItems ?? undefined}
+          myCorrectGuesses={myFinalCorrectGuesses ?? undefined}
+          totalRounds={totalRounds ?? undefined}
           onPlayAgain={handlePlayAgain}
           onLeaderboard={() => router.push('/leaderboard')}
         />

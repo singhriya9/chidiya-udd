@@ -114,7 +114,7 @@ export function LeaderboardTable({ players }: LeaderboardTableProps) {
                         {player.name}
                       </p>
                       <p className="text-slate-500 text-xs truncate font-medium">
-                        {player.totalCorrect ?? 0} total udds
+                        {player.totalCorrect ?? 0} total correct guesses
                       </p>
                     </div>
                   </div>

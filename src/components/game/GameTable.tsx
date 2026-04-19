@@ -558,15 +558,15 @@ export function GameTable({
 export function WinnerScreen({
   winnerName,
   winnerAvatar,
-  myScore,
-  totalUddItems,
+  myCorrectGuesses,
+  totalRounds,
   onPlayAgain,
   onLeaderboard,
 }: {
   winnerName: string;
   winnerAvatar: string | null;
-  myScore?: number;
-  totalUddItems?: number;
+  myCorrectGuesses?: number;
+  totalRounds?: number;
   onPlayAgain: () => void;
   onLeaderboard: () => void;
 }) {
@@ -600,8 +600,8 @@ export function WinnerScreen({
             </h2>
             <p className="text-slate-400 mb-8 text-sm">Last one standing</p>
 
-            {typeof myScore === 'number' ||
-            typeof totalUddItems === 'number' ? (
+            {typeof myCorrectGuesses === 'number' ||
+            typeof totalRounds === 'number' ? (
               <div className="mb-6 rounded-2xl border border-white/10 bg-black/35 px-4 py-3 text-left">
                 <div className="mb-3 flex items-center justify-between rounded-xl border border-white/10 bg-black/25 px-3 py-2">
                   <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
@@ -613,18 +613,18 @@ export function WinnerScreen({
                 </div>
                 <div className="flex items-center justify-between rounded-xl border border-white/10 bg-black/25 px-3 py-2">
                   <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
-                    Score
+                    Correct Guesses
                   </p>
                   <p className="text-2xl font-black text-amber-300">
-                    {myScore ?? 0}
+                    {myCorrectGuesses ?? 0}
                   </p>
                 </div>
                 <div className="mt-2 flex items-center justify-between rounded-xl border border-white/10 bg-black/25 px-3 py-2">
                   <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400">
-                    Total UDD Items
+                    Rounds Played
                   </p>
                   <p className="text-xl font-black text-white">
-                    {totalUddItems ?? 0}
+                    {totalRounds ?? 0}
                   </p>
                 </div>
               </div>

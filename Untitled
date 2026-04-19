@@ -1,4 +1,0 @@
-DATABASE_URL=postgresql://neondb_owner:npg_lgL3oAd6CpXz@ep-wispy-frost-amo4mpxp-pooler.c-5.us-east-1.aws.neon.tech/chidiya_udd?sslmode=require&channel_binding=require
-NEXT_PUBLIC_PARTYKIT_HOST="localhost:1999"
-ELEVENLABS_API_KEY=sk_df328c8f4bc06cbe1e8a93fc4de2b66f0fe1f1d30589da85
-ELEVENLABS_VOICE_ID=cgSgspJ2msm6clMCkdW9
