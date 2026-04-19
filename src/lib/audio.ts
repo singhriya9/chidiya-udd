@@ -49,12 +49,8 @@ export async function initAudio(): Promise<void> {
   // Prefer pack1 sprite because it is the guaranteed local baseline asset.
   defaultEngine = await loadSpriteEngine("sprite_pack1");
   if (!defaultEngine) {
-    // Backward-compatible fallback for older single-sprite setups.
-    defaultEngine = await loadSpriteEngine("chidiya_sprite");
-  }
-  if (!defaultEngine) {
     console.warn(
-      "[audio] No default sprite found (sprite_pack1/chidiya_sprite). Audio will run silently."
+      "[audio] No default sprite found. Audio will run silently."
     );
   }
 }
